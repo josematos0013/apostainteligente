@@ -1,0 +1,471 @@
+/* Reset e Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.highlight {
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.hero-cta {
+    text-align: left;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 18px 36px;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
+}
+
+.cta-button.large {
+    padding: 22px 44px;
+    font-size: 1.2rem;
+}
+
+.guarantee-text {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Ebook Mockup */
+.ebook-mockup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.ebook-cover {
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(145deg, #2c3e50, #34495e);
+    border-radius: 15px;
+    padding: 40px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: rotateY(-15deg) rotateX(5deg);
+    transition: transform 0.3s ease;
+}
+
+.ebook-cover:hover {
+    transform: rotateY(-10deg) rotateX(2deg);
+}
+
+.ebook-cover h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ebook-cover p {
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* Introduction Section */
+.intro-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.intro-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.highlight-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.benefit-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.chapter-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.benefit-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.benefit-list {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.benefit-list li {
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.benefit-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.benefit-highlight {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+/* Objections Section */
+.objections-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.objections-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.objection-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.objection-question {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 24px 30px;
+}
+
+.objection-question h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.objection-answer {
+    padding: 30px;
+}
+
+.objection-answer p {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Offer Section */
+.offer-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+}
+
+.offer-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.price-container {
+    margin: 40px 0;
+}
+
+.price {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffd700;
+    display: block;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.price-description {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.guarantee-box {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guarantee-icon {
+    font-size: 3rem;
+}
+
+.guarantee-content h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.guarantee-content p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.cta-container {
+    margin: 50px 0 30px 0;
+}
+
+.security-text {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.urgency-text {
+    margin-top: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.urgency-text p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefit-card {
+        padding: 30px 20px;
+    }
+    
+    .ebook-cover {
+        width: 250px;
+        height: 330px;
+        transform: none;
+    }
+    
+    .guarantee-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .price {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .cta-button {
+        padding: 16px 28px;
+        font-size: 1rem;
+    }
+    
+    .cta-button.large {
+        padding: 18px 32px;
+        font-size: 1.1rem;
+    }
+    
+    .benefit-card {
+        padding: 25px 15px;
+    }
+    
+    .objection-question {
+        padding: 20px;
+    }
+    
+    .objection-answer {
+        padding: 25px 20px;
+    }
+}
+
