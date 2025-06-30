@@ -97,37 +97,18 @@ body {
     perspective: 1000px;
 }
 
-.ebook-cover {
-    width: 300px;
-    height: 400px;
-    background: linear-gradient(145deg, #2c3e50, #34495e);
+.ebook-cover-img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
-    padding: 40px 30px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
     transform: rotateY(-15deg) rotateX(5deg);
     transition: transform 0.3s ease;
 }
 
-.ebook-cover:hover {
-    transform: rotateY(-10deg) rotateX(2deg);
-}
-
-.ebook-cover h3 {
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: #ffd700;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.ebook-cover p {
-    font-size: 1rem;
-    text-align: center;
-    opacity: 0.9;
+.ebook-cover-img:hover {
+    transform: rotateY(-10deg) rotateX(2deg) scale(1.05);
 }
 
 /* Introduction Section */
@@ -413,10 +394,13 @@ body {
         padding: 30px 20px;
     }
     
-    .ebook-cover {
-        width: 250px;
-        height: 330px;
+    .ebook-cover-img {
+        max-width: 280px;
         transform: none;
+    }
+    
+    .ebook-cover-img:hover {
+        transform: scale(1.05);
     }
     
     .guarantee-box {
@@ -466,6 +450,10 @@ body {
     
     .objection-answer {
         padding: 25px 20px;
+    }
+    
+    .ebook-cover-img {
+        max-width: 250px;
     }
 }
 
